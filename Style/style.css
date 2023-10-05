@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;1,100;1,200&family=Poppins:wght@100;200;300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 98vw;
+    height: 15vh;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #dee7e7;
+}
+header >ul{
+    display: flex;
+    list-style: none;
+}
+header > ul > li{
+    padding: 12px;
+}
+main{
+    width: 98vw;
+    height: calc(100vh - 15vh);
+}
+.main-photo{
+    background-color: #dee7e7;
+    width: 360px;
+    height: 515px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 22px -2px rgba(0,0,0,0.61);
+    -webkit-box-shadow: 4px 4px 22px -2px rgba(0,0,0,0.61);
+    -moz-box-shadow: 4px 4px 22px -2px rgba(0,0,0,0.61);
+    overflow: hidden;
+
+    position: absolute;
+    top:60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    transition:width .3s, height .3s;
+    transition-timing-function: ease;
+}
+
+section.main-photo > div#image{
+    background: #dee7e7 url(../imagens/IMG-20210216-WA0021.jpg);
+    height: 200px;
+    background-size: cover;
+    background-position: center top;
+    display: block;
+}
+div#text-mainpage{ 
+    margin-top: 12px;
+    font-family: 'Montserrat', sans-serif;
+}
+div#text-mainpage > p{
+     padding: 12px;
+     text-align: justify;
+     font-weight: 200
+    
+}
+div#text-mainpage > h1{
+    text-align: center;
+    text-transform: capitalize;
+    font-style: italic;
+    font-weight: 200;
+}
